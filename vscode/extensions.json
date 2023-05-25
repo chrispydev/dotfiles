@@ -1,0 +1,31 @@
+{
+  "recommendations": [
+    "xadillax.viml",
+    "vscjava.vscode-maven",
+    "vscjava.vscode-java-test",
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-java-dependency",
+    "vscjava.vscode-java-debug",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "svelte.svelte-vscode",
+    "sumneko.lua",
+    "ritwickdey.liveserver",
+    "redhat.java",
+    "pkief.material-icon-theme",
+    "ms-vsliveshare.vsliveshare",
+    "ms-toolsai.vscode-jupyter-slideshow",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter",
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "ms-python.isort",
+    "esbenp.prettier-vscode",
+    "dsznajder.es7-react-js-snippets",
+    "dart-code.flutter",
+    "dart-code.dart-code",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

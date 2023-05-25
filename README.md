@@ -1,6 +1,6 @@
-![fish screenshot](fish_screenshot.png)
+![fish screenshot](./images/fish_screenshot.png)
 
-![nvim screenshot](nvim_screenshot.png)
+![nvim screenshot](./images/nvim_screenshot.png)
 
 ### App I used freequently
 
