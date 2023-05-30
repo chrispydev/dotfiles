@@ -61,7 +61,7 @@ key_bindings:
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
 
-colors:
+colors:  
   primary:
     background: '0x0a1124'
     foreground: '0xeec49a'
