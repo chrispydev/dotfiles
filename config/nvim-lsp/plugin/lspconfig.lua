@@ -41,33 +41,33 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 end
 
-protocol.CompletionItemKind = {
-  '', -- Text
-  '', -- Method
-  '', -- Function
-  '', -- Constructor
-  '', -- Field
-  '', -- Variable
-  '', -- Class
-  'ﰮ', -- Interface
-  '', -- Module
-  '', -- Property
-  '', -- Unit
-  '', -- Value
-  '', -- Enum
-  '', -- Keyword
-  '﬌', -- Snippet
-  '', -- Color
-  '', -- File
-  '', -- Reference
-  '', -- Folder
-  '', -- EnumMember
-  '', -- Constant
-  '', -- Struct
-  '', -- Event
-  'ﬦ', -- Operator
-  '', -- TypeParameter
-}
+-- protocol.CompletionItemKind = {
+--   '',        -- Text
+--   '',        -- Method
+--   '',        -- Function
+--   '',        -- Constructor
+--   '',        -- Field
+--   '',        -- Variable
+--   '',        -- Class
+--   'ﰮ',        -- Interface
+--   '',        -- Module
+--   '',        -- Property
+--   '',        -- Unit
+--   '',        -- Value
+--   '',        -- Enum
+--   '',        -- Keyword
+--   '﬌(snippet)', -- Snippet
+--   '',        -- Color
+--   '',        -- File
+--   '',        -- Reference
+--   '',        -- Folder
+--   '',        -- EnumMember
+--   '',        -- Constant
+--   '',        -- Struct
+--   '',        -- Event
+--   'ﬦ',        -- Operator
+--   '',        -- TypeParameter
+-- }
 
 -- set custom completion for csslp
 --Enable (broadcasting) snippet capability for completion
@@ -85,7 +85,7 @@ nvim_lsp.cssls.setup {
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "javascript", "javascriptreact", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
 }
