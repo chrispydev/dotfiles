@@ -85,7 +85,7 @@ nvim_lsp.cssls.setup {
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  filetypes = { "javascript", "javascriptreact", "typescriptreact", "typescript.tsx" },
+  filetypes = { "javascript", "javascriptreact", "typescriptreact", "typescript.tsx", "typescript" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
 }
@@ -93,6 +93,7 @@ nvim_lsp.tsserver.setup {
 nvim_lsp.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  cmd = { "tailwindcss-language-server", "--stdio" },
   filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "clojure", "django-html", "htmldjango", "edge",
     "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "haml", "handlebars", "hbs", "html", "html-eex", "heex",
     "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css",

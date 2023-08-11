@@ -18,12 +18,6 @@ For svelte and sveltekit
 npm install -g svelte-language-server
 ```
 
-For tailwindcss
-
-```tailwindcss
-npm i -g tailwindcss-language-server
-```
-
 For cssls
 
 ```bash
