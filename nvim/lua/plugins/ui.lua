@@ -203,9 +203,13 @@ return {
 					directory_hl = "",
 					filename_hl = "Bold",
 					modified_sign = "",
-					readonly_icon = " 󰌾 ",
+					readonly_icon = " ¾░î¥ ",
 				}),
 			}
+
+			if not vim.g.trouble_lualine then
+				table.insert(opts.sections.lualine_c, { "navic", color_correction = "dynamic" })
+			end
 		end,
 	},
 
