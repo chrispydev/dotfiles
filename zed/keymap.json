@@ -1,0 +1,36 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-j": "editor::GoToDiagnostic",
+      "; f": "file_finder::Toggle",
+      "s v": "pane::SplitVertical",
+      "s s": "pane::SplitHorizontal",
+      "tab": "pane::ActivateNextItem",
+      "shift tab": "pane::ActivatePreviousItem",
+      "s h": "workspace::ActivatePaneLeft",
+      "s j": "workspace::ActivatePaneDown",
+      "s k": "workspace::ActivatePaneUp",
+      "s l": "workspace::ActivatePaneRight",
+    },
+  },
+  {
+    "context": "((vim_mode == helix_normal || vim_mode == helix_select) && !menu)",
+    "bindings": {
+      "ctrl-a": "editor::SelectAll",
+    },
+  },
+]

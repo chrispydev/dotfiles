@@ -1,0 +1,47 @@
+{
+  "auto_update": false,
+  "cli_default_open_behavior": "existing_window",
+  "wsl_connections": [
+    {
+      "distro_name": "Ubuntu",
+      "user": null,
+      "projects": []
+    }
+  ],
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "agent_servers": {
+    "github-copilot-cli": {
+      "type": "registry"
+    }
+  },
+  "icon_theme": "Material Icon Theme",
+  "vim_mode": true,
+  "theme": "Solarized Dark",
+  "buffer_line_height": {
+    "custom": 2.01
+  },
+  "buffer_font_family": "Operator Mono Lig",
+  "terminal": {
+    "font_family": "Operator Mono Lig",
+    "font_fallbacks": ["Ubuntu Nerd Font Propo"],
+    "shell": {
+      "program": "wsl.exe -e fish"
+    }
+  }
+}
