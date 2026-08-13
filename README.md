@@ -1,5 +1,4 @@
-# Dotfiles
-
+![Screen short](./Screenshot.png)
 Personal development environment and configuration files for a consistent, productive, and keyboard-focused workflow.
 
 ## Contents
