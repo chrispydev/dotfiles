@@ -67,23 +67,39 @@ vim.keymap.set("n", "<leader>w", ":set wrap!<CR>", { desc = "Toggle line wrap" }
 
 vim.g.clipboard = {
 	name = "Windows Clipboard",
+
 	copy = {
-		["+"] = "clip.exe",
-		["*"] = "clip.exe",
-	},
-	paste = {
 		["+"] = {
 			"powershell.exe",
 			"-NoProfile",
 			"-Command",
-			'[Console]::Out.Write((Get-Clipboard).Replace("`r", ""))',
+			"$input | Set-Clipboard",
 		},
 		["*"] = {
 			"powershell.exe",
 			"-NoProfile",
 			"-Command",
-			'[Console]::Out.Write((Get-Clipboard).Replace("`r", ""))',
+			"$input | Set-Clipboard",
 		},
 	},
+
+	paste = {
+		["+"] = {
+			"powershell.exe",
+			"-NoProfile",
+			"-Command",
+			'[Console]::Out.Write((Get-Clipboard -Raw).Replace("`r", ""))',
+		},
+		["*"] = {
+			"powershell.exe",
+			"-NoProfile",
+			"-Command",
+			'[Console]::Out.Write((Get-Clipboard -Raw).Replace("`r", ""))',
+		},
+	},
+
 	cache_enabled = 0,
 }
+
+-- Use the Windows system clipboard for normal yank/paste
+vim.opt.clipboard = "unnamedplus"
